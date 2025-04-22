@@ -4,16 +4,20 @@ Um projeto em Java que simula um sistema bancário com funcionalidades básicas.
 
 ## Cenário do Problema
 
-O projeto representa uma aplicação de terminal para gerenciar um banco de forma simplificada. Os usuários podem:
+O projeto representa uma aplicação de terminal para gerenciar um banco de forma simplificada.
 
-- Cadastrar clientes (Pessoa Física e Pessoa Jurídica)
-- Criar contas bancárias (Corrente ou Poupança)
-- Realizar depósitos, saques e transferências
-- Visualizar clientes, contas e movimentações
+### Funcionalidades disponíveis
+
+- Adicionar cliente (PF ou PJ)
+- Adicionar conta (Corrente ou Poupança)
+- Listar clientes, contas ou movimentações
+- Sacar valor de uma conta
+- Depositar valor em uma conta
+- Realizar transferência entre contas
 - Aplicar rendimento mensal às contas poupança
 
-Esse sistema foi desenvolvido para a matéria de Desonvolvimento de Sistemas Orientados a Objeto do Curso Ciência da Computação IFSC-Lages
-
+Esse sistema foi desenvolvido para a matéria de Desenvolvimento de Sistemas Orientados a Objeto da 3ª fase do Curso Ciência da Computação IFSC-Lages
+  
 ## Tecnologias utilizadas
 
 - Java 21
@@ -46,17 +50,6 @@ Esse sistema foi desenvolvido para a matéria de Desonvolvimento de Sistemas Ori
    java Main
    ```
 
->Obs: É necessário que todos os arquivos `.java` estejam no mesmo diretório ou organizados em pacotes corretamente com suas respectivas classes auxiliares.
-
-## Funcionalidades disponíveis
-
-- [x] Adicionar cliente
-- [x] Adicionar conta (Corrente ou Poupança)
-- [x] Listar clientes, contas ou movimentações
-- [x] Sacar valor de uma conta
-- [x] Depositar valor em uma conta
-- [x] Realizar transferência entre contas
-- [x] Aplicar rendimento mensal às contas poupança
-- [x] Tratamento de exceções e validações
+>Obs: É necessário que todos os arquivos `.java` estejam organizados em pacotes corretamente com suas respectivas classes auxiliares.
 
 Feito por Vinícius S. Corbellini

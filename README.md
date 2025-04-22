@@ -32,6 +32,9 @@ Esse sistema foi desenvolvido para a matéria de Desenvolvimento de Sistemas Ori
 - `Movimentação.java`: Registro das movimentações.
 - Exceções personalizadas: `InputInvalidoException`, `ClienteNotFoundException`, `ContaNotFoundException`, etc.
 
+### Diagrama uml do sistema
+![Diagrama do sistema](BancoDOO.png)
+
 ## Como executar
 
 1. **Clone o repositório:**

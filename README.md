@@ -29,30 +29,54 @@ Esse sistema foi desenvolvido para a matéria de Desenvolvimento de Sistemas Ori
 - `Banco.java`: gerencia clientes, contas e movimentações.
 - `Cliente.java`, `PessoaFisica.java`, `PessoaJuridica.java`: hierarquia de clientes.
 - `Conta.java`, `Corrente.java`, `Poupanca.java`: hierarquia de contas.
-- `Movimentação.java`: Registro das movimentações.
+- `Movimentacao.java`: Registro das movimentações.
 - Exceções personalizadas: `InputInvalidoException`, `ClienteNotFoundException`, `ContaNotFoundException`, etc.
 
 ### Diagrama uml do sistema
 ![Diagrama do sistema](BancoDOO.png)
 
-## Como executar
+## Como executar (No terminal)
 
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/ViniciusCorbellini/banco-simplificado.git
+   ```
+
+2. **Mude o diretório para a pasta do projeto:**
+   ```bash
    cd banco-simplificado
    ```
-
-2. **Compile o projeto:**
+   
+3. **Crie uma pasta para armazenar os arquivos compilados:**
    ```bash
-   javac Main.java
+   mkdir -p bin
    ```
 
-3. **Execute o programa:**
+3. **Compile o projeto:**
    ```bash
-   java Main
+   javac -d bin $(find bancodoo -name "*.java")
    ```
 
->Obs: É necessário que todos os arquivos `.java` estejam organizados em pacotes corretamente com suas respectivas classes auxiliares.
+4. **Execute o programa:**
+   ```bash
+   java -cp bin bancodoo.Main
+   ```
+**Se tudo estiver certo, você verá a seguinte tela**
+```
+===== Banco =====
+=== Operacoes ===
+1. Adicionar Cliente
+2. Adicionar Conta
+3. Listar Clientes, Contas ou Movimentacoes de uma conta
+4. Sacar
+5. Depositar
+6. Transferir
+7. Aplicar Rendimento
+8. Sair
+=================
+Escolha uma opcao:
+```
+
+>Obs: É necessário que todos os arquivos .java estejam organizados conforme a estrutura de pacotes do código-fonte.
 
 Feito por Vinícius S. Corbellini
